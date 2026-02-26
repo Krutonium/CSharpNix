@@ -5,7 +5,7 @@
 set -euo pipefail
 
 # Clean previous outputs
-rm -rf packages deps.json obj bin
+rm -rd packages deps.json
 
 # Restore into local directory
 dotnet restore --packages ./packages
